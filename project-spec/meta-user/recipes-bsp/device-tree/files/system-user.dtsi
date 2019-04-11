@@ -1,0 +1,22 @@
+/include/ "system-conf.dtsi"
+/ {
+	chosen {
+		bootargs = "earlycon clk_ignore_unused root=/dev/ram rw cma=1700M cpuidle.off=1";
+		stdout-path = "serial0:115200n8";
+	};
+};
+
+&sdhci1 {
+	status = "okay";
+	no-1-8-v;	/* for 1.0 silicon */
+	disable-wp; /*wp-inverted;*/
+	xlnx,mio_bank = <1>;
+};
+
+&sdhci0 {
+	status = "okay";
+	no-1-8-v;	/* for 1.0 silicon */
+	non-removable;
+	disable-wp;
+	xlnx,mio_bank = <0>;
+};
