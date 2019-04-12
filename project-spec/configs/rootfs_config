@@ -1380,7 +1380,7 @@ CONFIG_run-postinsts=y
 #
 # ffmpeg 
 #
-# CONFIG_ffmpeg is not set
+CONFIG_ffmpeg=y
 # CONFIG_ffmpeg-dbg is not set
 # CONFIG_ffmpeg-dev is not set
 
@@ -1802,7 +1802,7 @@ CONFIG_run-postinsts=y
 #
 # libusb1 
 #
-# CONFIG_libusb1 is not set
+CONFIG_libusb1=y
 # CONFIG_libusb1-dev is not set
 # CONFIG_libusb1-dbg is not set
 
@@ -1937,7 +1937,7 @@ CONFIG_run-postinsts=y
 #
 # libxml2 
 #
-# CONFIG_libxml2 is not set
+CONFIG_libxml2=y
 # CONFIG_libxml2-python is not set
 # CONFIG_libxml2-dbg is not set
 # CONFIG_libxml2-dev is not set
@@ -2261,7 +2261,7 @@ CONFIG_run-postinsts=y
 #
 # zlib 
 #
-# CONFIG_zlib is not set
+CONFIG_zlib=y
 # CONFIG_zlib-dev is not set
 # CONFIG_zlib-dbg is not set
 
@@ -4242,7 +4242,7 @@ CONFIG_hellopm=y
 #
 # packagegroup-petalinux-gstreamer 
 #
-# CONFIG_packagegroup-petalinux-gstreamer is not set
+CONFIG_packagegroup-petalinux-gstreamer=y
 # CONFIG_packagegroup-petalinux-gstreamer-dev is not set
 # CONFIG_packagegroup-petalinux-gstreamer-dbg is not set
 
@@ -4341,7 +4341,7 @@ CONFIG_hellopm=y
 #
 # packagegroup-petalinux-v4lutils 
 #
-# CONFIG_packagegroup-petalinux-v4lutils is not set
+CONFIG_packagegroup-petalinux-v4lutils=y
 # CONFIG_packagegroup-petalinux-v4lutils-dbg is not set
 # CONFIG_packagegroup-petalinux-v4lutils-dev is not set
 
@@ -4384,6 +4384,7 @@ CONFIG_imagefeature-hwcodecs=y
 #
 # user packages 
 #
+CONFIG_aravis=y
 
 #
 # PetaLinux RootFS Settings
