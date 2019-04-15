@@ -42,6 +42,11 @@
 			rxd3-skew-ps = <420>;
 		};
 	};
+	video_m2m {
+		compatible = "xlnx,mem2mem";
+		dmas = <&M2M_v_frmbuf_rd_0 0>, <&M2M_v_frmbuf_wr_0 0>;
+		dma-names = "tx", "rx";
+	};
 };
 
 &gem0 {
@@ -62,7 +67,7 @@
 &sdhci1 {
 	status = "okay";
 	no-1-8-v;	/* for 1.0 silicon */
-	disable-wp; /*wp-inverted;*/
+	wp-inverted;
 	xlnx,mio_bank = <1>;
 };
 
@@ -72,4 +77,5 @@
 	non-removable;
 	disable-wp;
 	xlnx,mio_bank = <0>;
+	bus-width = <8>;
 };
