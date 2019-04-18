@@ -2789,7 +2789,7 @@ CONFIG_packagegroup-core-boot=y
 #
 # packagegroup-core-ssh-dropbear 
 #
-CONFIG_packagegroup-core-ssh-dropbear=y
+# CONFIG_packagegroup-core-ssh-dropbear is not set
 # CONFIG_packagegroup-core-ssh-dropbear-dev is not set
 # CONFIG_packagegroup-core-ssh-dropbear-dbg is not set
 
@@ -4384,7 +4384,9 @@ CONFIG_imagefeature-hwcodecs=y
 #
 # user packages 
 #
+# CONFIG_libiio is not set
 CONFIG_aravis=y
+CONFIG_mw-fs-overlay=y
 
 #
 # PetaLinux RootFS Settings
