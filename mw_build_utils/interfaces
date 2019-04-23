@@ -1,12 +1,11 @@
 # interface configuration
-auto lo eth0
+auto lo eth0 eth1
 iface lo inet loopback
-# eth0: Static configuration
-iface eth0 inet static
-address 192.168.1.102
-netmask 255.255.255.0
-gateway 192.168.1.1
-
 # eth0: Dynamic configuration
-# iface eth0 inet dhcp
+iface eth0 inet dhcp
+mtu 9000
+
+# eth1: Dynamic configuration
+iface eth1 inet dhcp
+mtu 9000
 

@@ -95,7 +95,7 @@
 	"test_crc=if imi ${clobstart}; then run test_img; else echo ${img} Bad CRC - ${img} is NOT UPDATED; fi\0" \ 
 	"test_img=setenv var \"if test ${filesize} -gt ${psize}\\; then run fault\\; else run ${installcmd}\\; fi\"; run var; setenv var\0" \ 
 	"netboot=tftpboot ${netstart} ${kernel_img} && bootm\0" \ 
-	"default_bootcmd=run uenvboot; run cp_kernel2ram && run cp_dtb2ram && booti ${netstart} - ${dtbnetstart}\0" \ 
+	"default_bootcmd=run uenvboot; run sdboot\0" \ 
 ""
 
 
